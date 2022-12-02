@@ -13,11 +13,11 @@
         <a href="/restaurants/{{this.id}}">
           <h4>{{this.name}}</h4>
         </a>
-        <span class="bg-secondary badge">收讚數：{{this.favoritedCount}}</span>
+        <span class="bg-secondary badge">收藏數：{{this.FavoritedUsers.length}}</span>
         <p class="my-4" style="white-space: break-spaces;">{{this.description}}</p>
         <div class="d-flex">
           <a class="btn btn-primary m-1" href="/restaurants/{{this.id}}">Show</a>
-          {{#if this.isFavorite}}
+          {{#if isFavorited}}
           <form action="/favorite/{{this.id}}?_method=DELETE" method="POST">
             <button type="submit" class="btn btn-danger m-1">移除最愛</button>
           </form>
