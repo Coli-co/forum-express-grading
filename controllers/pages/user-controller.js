@@ -7,9 +7,9 @@ const {
   Favorite,
   Like,
   Followship
-} = require('../models')
-const { getUser } = require('../helpers/auth-helpers')
-const { uploadFile } = require('../helpers/file-helpers')
+} = require('../../models')
+const { getUser } = require('../../helpers/auth-helpers')
+const { uploadFile } = require('../../helpers/file-helpers')
 
 const userController = {
   signUpPage: (req, res) => {
